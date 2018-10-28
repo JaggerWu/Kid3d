@@ -39,3 +39,6 @@ glfw/
 glm/
 glxw/
 
+# Build
+Build/
+
