@@ -42,3 +42,10 @@ glxw/
 # Build
 Build/
 
+# Cmake files
+CMakeCache.txt
+CMakeFiles/*
+Makefile
+cmake_install.cmake
+
+
