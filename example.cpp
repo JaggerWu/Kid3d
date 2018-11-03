@@ -12,13 +12,13 @@ int main() {
         return 1;
     }
 
-    select opengl version
+    // select opengl version
     glxwInit();
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 
-    create a window
+    // create a window
     GLFWwindow *window;
     if((window = glfwCreateWindow(width, height, "00skeleton", 0, 0)) == 0) {
         std::cerr << "failed to open window" << std::endl;
@@ -60,4 +60,3 @@ int main() {
 
     return 0;
 }
-
