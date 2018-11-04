@@ -23,6 +23,11 @@ Then `Makeflie` will be generated. `make install` will make libs installed.
 ```
 
 ### Run in terminel
+Firstly, build project
 ```
-gcc -o play example.cpp -lglfw -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -framework GLUT -lGLEW -lglfw3 -v
+cmake .
+```
+
+```
+g++ example.cpp -o play -lGLEW -lglfw3 -v
 ```
