@@ -7,7 +7,7 @@ This is a playgroud for computer graphics. I supply some examples for 3D graphic
 - [glfw](http://www.glfw.org/)
 - [glxw](http://glew.sourceforge.net/)
 - [glm](https://glm.g-truc.net/0.9.9/index.html)
-- [glad](https://github.com/Dav1dde/glad)
+- [glad](https://github.com/Dav1dde/glad)(how to install)
 
 ### Installing Libraries(except `glad`)
 ```
