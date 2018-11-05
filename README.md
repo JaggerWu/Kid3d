@@ -8,6 +8,7 @@ This is a playgroud for computer graphics. I supply some examples for 3D graphic
 - [glxw](http://glew.sourceforge.net/)
 - [glm](https://glm.g-truc.net/0.9.9/index.html)
 - [glad](https://github.com/Dav1dde/glad)(how to install)
+- [SDL2](http://www.libsdl.org/)
 
 ### Installing Libraries(except `glad`)
 ```
