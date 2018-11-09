@@ -13,50 +13,50 @@ int main() {
     }
 
     // select opengl version
-    glxwInit();
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    // glxwInit();
+    // glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    // glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    // glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 
     // create a window
-    GLFWwindow *window;
-    if((window = glfwCreateWindow(width, height, "00skeleton", 0, 0)) == 0) {
-        std::cerr << "failed to open window" << std::endl;
-        glfwTerminate();
-        return 1;
-    }
+    // GLFWwindow *window;
+    // if((window = glfwCreateWindow(width, height, "00skeleton", 0, 0)) == 0) {
+    //     std::cerr << "failed to open window" << std::endl;
+    //     glfwTerminate();
+    //     return 1;
+    // }
     
-    glfwMakeContextCurrent(window);
+    // glfwMakeContextCurrent(window);
 
-    if(glxwInit()) {
-        std::cerr << "failed to init GL3W" << std::endl;
-        glfwDestroyWindow(window);
-        glfwTerminate();
-        return 1;
-    }
+    // if(glxwInit()) {
+    //     std::cerr << "failed to init GL3W" << std::endl;
+    //     glfwDestroyWindow(window);
+    //     glfwTerminate();
+    //     return 1;
+    // }
 
-    // creation and initialization of stuff goes here
-    // ...
+    // // creation and initialization of stuff goes here
+    // // ...
 
-    while(!glfwWindowShouldClose(window)) {
-        glfwPollEvents();
+    // while(!glfwWindowShouldClose(window)) {
+    //     glfwPollEvents();
 
-        // drawing etc goes here
-        // ...
+    //     // drawing etc goes here
+    //     // ...
 
-        // check for errors
-        GLenum error = glGetError();
-        if(error != GL_NO_ERROR) {
-            std::cerr << error << std::endl;
-            break;
-        }
+    //     // check for errors
+    //     GLenum error = glGetError();
+    //     if(error != GL_NO_ERROR) {
+    //         std::cerr << error << std::endl;
+    //         break;
+    //     }
 
-        // finally swap buffers
-        glfwSwapBuffers(window);
-    }
+    //     // finally swap buffers
+    //     glfwSwapBuffers(window);
+    // }
 
-    glfwDestroyWindow(window);
-    glfwTerminate();
+    // glfwDestroyWindow(window);
+    // glfwTerminate();
 
     return 0;
 }
