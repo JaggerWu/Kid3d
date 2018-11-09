@@ -32,3 +32,8 @@ cmake .
 ```
 g++ example.cpp -o play -lGLEW -lglfw3 -v
 ```
+
+### Link the `GLFW`
+```
+-L/usr/bin/lib/
+``` 
