@@ -21,6 +21,13 @@ Then `Makeflie` will be generated. `make install` will make libs installed.
 ```c++
 #include <GLXW/glxw.h>
 #include <GLFW/glfw3.h>
+
+int mian() {
+    glxwInit();
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+    return 0
+}
 ```
 
 ### Run in terminel
@@ -32,8 +39,3 @@ cmake .
 ```
 g++ example.cpp -o play -lGLEW -lglfw3 -v
 ```
-
-### Link the `GLFW`
-```
--L/usr/bin/lib/
-``` 
