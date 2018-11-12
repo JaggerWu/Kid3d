@@ -7,10 +7,13 @@ int main() {
     int width = 640;
     int height = 480;
 
-    if(glfwInit() == GL_FALSE) {
-        std::cerr << "failed to init GLFW" << std::endl;
-        return 1;
-    }
+    glfwMakeContextCurrent(window);
+    glxwInit();
+
+    return 0;
+
+    
+}
 
     // select opengl version
     // glxwInit();
