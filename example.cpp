@@ -1,6 +1,12 @@
 #include <GLXW/glxw.h>
 #include <GLFW/glfw3.h>
 
+struct Ball
+{
+    int radius;
+    std::vector<int> pos;
+};
+
 #include <iostream>
 
 int main() {
@@ -12,6 +18,8 @@ int main() {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwCreateWindow(640, 480, "Hello World", NULL, NULL );
+
+
 
     return 0;
 
