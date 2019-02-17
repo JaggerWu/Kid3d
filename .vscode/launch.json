@@ -8,7 +8,7 @@
             "name": "g++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/a.out",
+            "program": "${workspaceFolder}/demo",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
