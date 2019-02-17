@@ -6,10 +6,10 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++",
+            "command": "make",
             "args": [
                 // Ask msbuild to generate full paths for file names.
-                "-g", "example.cpp"
+                "build"
             ],
             "group": {
                 "kind": "build",
