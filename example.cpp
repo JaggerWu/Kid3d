@@ -3,9 +3,15 @@
 
 using namespace std;
 
-int main() {
-    cout << "Start running..." << endl;
-    cout << "Do something here..." << endl;
+#ifndef HAVEN_OPENGL
+#pragma warning(diable: 4072);
+#endif
 
-    return 0;
+#ifdef HAVE_OPENGL
+namespace ml
+{
+    const cahr* msg;
+    msg = "Running...";
+    cout << msg << endl;
 }
+#endif
